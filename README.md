@@ -155,6 +155,7 @@ This Python script allows users to **encrypt** and **decrypt** text using the Vi
 
 #### Step 1: Prompt User for Input
 - The script starts by displaying a menu:
+
 ===== Vigenère Cipher Tool =====
 
 1. Encrypt
