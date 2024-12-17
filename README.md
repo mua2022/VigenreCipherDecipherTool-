@@ -72,9 +72,13 @@ Thus, the **ciphertext** becomes: `RIJVS`.
 
 ## 🧩 File Structure
 
-vigenrecipherDecipherTool/ │ 
-├── index.html # Main HTML structure 
+vigenrecipherDecipherTool/ 
+│ 
+
+├── index.html # Main HTML structure
+
 ├── style.css # Styling for the webpage
+
 └── script.js # JavaScript logic for enciphering and deciphering
 
 
@@ -134,7 +138,7 @@ This project is licensed under the MIT License. Feel free to use, modify, and sh
 ## 👨‍💻 Author
 
 **[MUA EMMANUEL]**  
-GitHub: [**MUA**](https://github.com/mua2022)
+GitHub: [**mua2022**](https://github.com/mua2022)
 
 ---
 
