@@ -176,6 +176,12 @@ This Python script allows users to **encrypt** and **decrypt** text using the Vi
 #### Step 4: Display the Result
 - The resulting ciphertext or plaintext is displayed.
 
+## 🛠️ How to Run the Script
+
+1. Copy the code into a file named `script.py`.
+2. Run the script using Python:
+   ```bash
+   python script.py
 ---
 
 ## 📄 Hosting Instructions
