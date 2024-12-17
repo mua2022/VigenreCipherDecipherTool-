@@ -72,14 +72,12 @@ Thus, the **ciphertext** becomes: `RIJVS`.
 
 ## 🧩 File Structure
 
-vigenrecipherDecipherTool/ 
-│ 
+vigenreCipherDecipherTool/
+│
+├── index.html   # Main HTML structure
+├── style.css    # Styling for the webpage
+└── script.js    # JavaScript logic for enciphering and deciphering
 
-├── index.html # Main HTML structure
-
-├── style.css # Styling for the webpage
-
-└── script.js # JavaScript logic for enciphering and deciphering
 
 
 ---
