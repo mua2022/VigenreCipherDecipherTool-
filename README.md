@@ -3,7 +3,7 @@
 This project is a simple **Vigenère Cipher** tool that allows users to **encrypt** and **decrypt** text using a keyword. It is implemented in HTML, CSS, and JavaScript, making it lightweight and easily hostable on GitHub Pages.
 
 ## 🔗 Live Demo
-You can try the tool live here: [**GitHub Pages**](https://mua2022.github.io/VigenreCipherDecipherTool)
+You can try the tool live here: [**GitHub Pages**](https://mua2022.github.io/VigenreCipherDecipherTool-/)
 
 ---
 
@@ -62,7 +62,7 @@ Thus, the **ciphertext** becomes: `RIJVS`.
 
 ## 🛠️ How to Use the Tool
 
-1. Open the tool in your browser or on the [GitHub Pages link](https://mua2022.github.io/VigenreCipherDecipherTool).
+1. Open the tool in your browser or on the [GitHub Pages link](https://mua2022.github.io/VigenreCipherDecipherTool-/).
 2. Enter the text you want to encrypt or decrypt.
 3. Provide a **keyword** (this is required for both encryption and decryption).
 4. Click **Encipher** to encrypt the text or **Decipher** to decrypt it.
