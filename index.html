@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vigenère Cipher - Encipher & Decipher</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Vigenère Cipher Encoder & Decoder</h1>
+    </header>
+
+    <section>
+        <p>
+            The <strong>Vigenère Cipher</strong> is a method of encrypting alphabetic text using a 
+            series of Caesar Ciphers based on the letters of a keyword. 
+            Both encryption and decryption rely on the keyword.
+        </p>
+        <h3>How It Works:</h3>
+        <ul>
+            <li>Each letter in the plaintext is shifted by the position of the corresponding letter in the keyword.</li>
+            <li>The keyword repeats when it is shorter than the text.</li>
+        </ul>
+    </section>
+
+    <section class="cipher-form">
+        <h2>Try it Out!</h2>
+        <label for="text">Enter Text:</label>
+        <input type="text" id="text" placeholder="Type your text here">
+
+        <label for="key">Enter Key (Keyword):</label>
+        <input type="text" id="key" placeholder="Enter the keyword">
+
+        <div class="buttons">
+            <button onclick="encipher()">Encipher</button>
+            <button onclick="decipher()">Decipher</button>
+        </div>
+
+        <h3>Result:</h3>
+        <div id="result">Your result will appear here...</div>
+    </section>
+
+    <footer>
+        <p>Hosted on <a href="https://pages.github.com" target="_blank">GitHub Pages</a> | Vigenère Cipher Implementation</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
