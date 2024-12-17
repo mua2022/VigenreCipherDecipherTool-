@@ -72,10 +72,10 @@ Thus, the **ciphertext** becomes: `RIJVS`.
 
 ## 🧩 File Structure
 
-vigenreCipherDecipherTool/
-                            │
-                            ├── index.html   # Main HTML structure
-                            ├── style.css    # Styling for the webpage
+vigenreCipherDecipherTool/<br>
+                            │<br>
+                            ├── index.html   # Main HTML structure <br>
+                            ├── style.css    # Styling for the webpage<br>
                             └── script.js    # JavaScript logic for enciphering and deciphering
 
 
@@ -111,6 +111,69 @@ For plaintext `ATTACKATDAWN` with keyword `LEMON`:
 | Ciphertext| L | X | F | O | P | V | E | F | R | N | H | R |
 
 The ciphertext is `LXFOPVEFRNHR`.
+
+---
+
+# Vigenère Cipher - Python Script
+
+This Python script allows users to **encrypt** and **decrypt** text using the Vigenère Cipher method. The Vigenère Cipher is a polyalphabetic substitution cipher that uses a keyword to determine shifting values for each letter in the plaintext.
+
+---
+
+## 🚀 How the Script Works
+
+### 1. **Core Functions**
+
+#### `shift_character(char, shift, encrypt=True)`
+- **Purpose**: Shifts a character within the range 'A' to 'Z' by a given shift value.
+- **Parameters**:
+  - `char`: Single uppercase character (e.g., 'A').
+  - `shift`: The shift value calculated from the keyword.
+  - `encrypt`: Boolean flag (True for encryption, False for decryption).
+- **How It Works**:
+  - Converts the character into a numeric position (`0–25`) using `ord`.
+  - Shifts forward (for encryption) or backward (for decryption).
+  - Wraps around using `% 26` to stay within the alphabet range.
+
+#### `vigenere_cipher(text, key, encrypt=True)`
+- **Purpose**: Enciphers or deciphers the input text using the keyword.
+- **Parameters**:
+  - `text`: The input plaintext or ciphertext (string).
+  - `key`: The keyword used for encryption/decryption.
+  - `encrypt`: Boolean flag (True for encryption, False for decryption).
+- **How It Works**:
+  1. Converts both the `text` and `key` to uppercase and removes spaces.
+  2. Loops through each letter in the text:
+     - Calculates the shift using the corresponding key letter.
+     - Calls `shift_character` to perform the shift.
+     - Handles non-alphabetic characters (keeps them unchanged).
+  3. Returns the resulting string.
+
+---
+
+### 2. **Program Flow**
+
+#### Step 1: Prompt User for Input
+- The script starts by displaying a menu:
+===== Vigenère Cipher Tool =====
+
+1. Encrypt
+2. Decrypt
+
+- The user selects **Encrypt** (1) or **Decrypt** (2).
+
+#### Step 2: Input Text and Key
+- The user enters:
+- **Text**: The plaintext or ciphertext.
+- **Key**: The keyword used for shifting.
+
+#### Step 3: Perform Encryption or Decryption
+- Based on the user's choice:
+- Calls the `vigenere_cipher` function with `encrypt=True` for encryption.
+- Calls the `vigenere_cipher` function with `encrypt=False` for decryption.
+
+#### Step 4: Display the Result
+- The resulting ciphertext or plaintext is displayed.
 
 ---
 
